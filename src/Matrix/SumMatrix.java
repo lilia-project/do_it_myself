@@ -11,7 +11,7 @@ public class SumMatrix {
         Scanner scanner = new Scanner(System.in);
         int size = scanner.nextInt();
 
-
+        //создать матрицы
         int[][] matrix1 = new int[size][size];
         int[][] matrix2 = new int[size][size];
         int[][] sumMatrix = new int[size][size];
