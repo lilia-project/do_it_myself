@@ -9,34 +9,34 @@ public class BaseConverter {
             methodConvert();
             int option = scanner.nextInt();
 
-            if (inputValidation(option)) return;
+            if (invalidSelection(option)) return;
 
             double tempCelsius = scanner.nextDouble();
             Converter converter = new Converter();
-            converter.tempConverter(option, tempCelsius);
+            converter.tempConvert(option, tempCelsius);
         }
         while (true);
     }
 
-    private static boolean inputValidation(int option) {
+    private static boolean invalidSelection(int option) {
         if (option != 1 & option != 2 & option != 3 & option != 4) {
 
-            System.out.println("конвертер c таким номером не предусмотрен");
+            System.out.println("this number does not belong to the list ");
             return true;
         } else {
-            System.out.println("введите значение температуры в градусах Цельсия");
+            System.out.println("enter the temperature in degrees Celsius");
         }
         return false;
     }
 
     private static void methodConvert() {
         System.out.println();
-        System.out.println("выберите номер варианта конвертации");
+        System.out.println("select option");
         System.out.println();
-        System.out.println("1 из шкалы Цельсия в шкалу Кельвина");
-        System.out.println("2 из шкалы Цельсия в шкалу Фаренгейта");
-        System.out.println("3 из шкалы Цельсия в шкалу Реомюра");
-        System.out.println("4 из шкалы Цельсия в шкалу Ранкина");
+        System.out.println("1 from Celsius to Kelvin");
+        System.out.println("2 from Celsius to Fahrenheit");
+        System.out.println("3 from Celsius to Reaumur");
+        System.out.println("4 from Celsius to Rankine");
     }
 
 
