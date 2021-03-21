@@ -1,7 +1,7 @@
 package BaseConverter;
 
 public class Converter {
-    void tempConverter(int option, double tempCelsius) {
+    void tempConvert(int option, double tempCelsius) {
         switch (option) {
             case 1:
                 double tempKelvin = tempCelsius + 273.15;
